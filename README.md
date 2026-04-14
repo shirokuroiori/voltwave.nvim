@@ -1,6 +1,8 @@
-# voltwave.nvim
+<div align="center">
+  <h1>voltwave</h1>
+</div>
 
-Synthwave84 と [Fluoromachine](https://github.com/maxmx03/fluoromachine.nvim) からインスピレーションを受け、個人的な好みとして「緑の電流」を思わせるテイストを加えた、レトロフューチャーな雰囲気の Neovim カラーテーマです。
+Inspired by Synthwave84 and [Fluoromachine](https://github.com/maxmx03/fluoromachine.nvim), this Neovim color theme features a retro-futuristic vibe with a touch of “green electricity”—a personal touch I added to suit my own taste.
 
 ![screenshot](./screenshot.png)
 
@@ -91,22 +93,8 @@ require('lualine').setup {
 
 ## Palette
 
-| Role | Color |
-|---|---|
-| Background | `#15121c` |
-| Background Alt | `#1b1826` |
-| Surface | `#2d2a38` |
-| Foreground | `#c0c4bb` |
-| Green (Spotify) | `#1db954` |
-| Green Bright | `#1ed760` |
-| Green Accent | `#8EF4C6` |
-| Pink | `#FF7EDB` |
-| Purple | `#AF6DF9` |
-| Cyan | `#61E2FF` |
-| Yellow | `#F1FA8C` |
-| Orange | `#FFB86C` |
-| Red | `#FE4450` |
+[Palette](./lua/voltwave/palette.lua)
 
 ## License
 
-MIT
+[MIT License](./LICENSE)
