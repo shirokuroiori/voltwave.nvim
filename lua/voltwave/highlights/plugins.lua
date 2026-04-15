@@ -143,12 +143,13 @@ return function(p, c)
   -- indent-blankline (ibl v3 + v2 互換)
   if c.plugins.indent_blankline then
     local ibl = {
-      IblIndent                         = { fg = p.bg_alt },
-      IblWhitespace                     = { fg = p.bg_alt },
+      -- NeoTreeIndentMarker と同じトーンに揃える
+      IblIndent                         = { fg = p.fg_dim },
+      IblWhitespace                     = { fg = p.fg_dim },
       IblScope                          = { fg = p.purple },
-      IndentBlanklineChar               = { fg = p.bg_alt },
-      IndentBlanklineSpaceChar          = { fg = p.bg_alt },
-      IndentBlanklineSpaceCharBlankline = { fg = p.bg_alt },
+      IndentBlanklineChar               = { fg = p.fg_dim },
+      IndentBlanklineSpaceChar          = { fg = p.fg_dim },
+      IndentBlanklineSpaceCharBlankline = { fg = p.fg_dim },
       IndentBlanklineContextChar        = { fg = p.purple },
       IndentBlanklineContextStart       = { sp = p.purple, underline = true },
     }
