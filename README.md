@@ -52,6 +52,8 @@ vim.cmd.colorscheme('voltwave')
 require('voltwave').setup({
   transparent = false,        -- true: Normal/NormalNC/SignColumn etc. bg = NONE
   bolt = true,                -- 稲妻ライム緑 (#B6FF00) を MatchParen, LSP Hint, TODO コメントで使う (default: true)
+  glow = true,                -- fluoromachine 風の淡いネオングローを主要グループへ付与 (default: true)
+  glow_strength = 1.0,        -- グロー強度倍率。0.0 で無効、1.0 で標準 (default: 1.0)
   italic = {
     comments   = true,
     keywords   = false,
@@ -83,6 +85,8 @@ vim.cmd.colorscheme('voltwave')
 ```
 
 voltwave という名前にちなんだ稲妻演出です。`bolt = false` にするとフォールバック色 (`green3`) が使われます。
+`glow = false` にすると、オーラ背景を無効化してフラットな表示になります。
+`glow_strength` は `0.0-1.0` の範囲を推奨します（範囲外は内部でクランプされます）。
 
 ## lualine
 

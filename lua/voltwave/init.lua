@@ -27,6 +27,52 @@ function M.load()
   -- 5. 全ハイライトグループを集約
   local groups = require('voltwave.highlights').get(p, c)
 
+  -- 5.5 glow エフェクトを後段で重ねる
+  if c.glow then
+    local util = require('voltwave.util')
+    local base_bg = c.transparent and p.bg_alt or p.bg
+    local strength = math.max(0, math.min(1, tonumber(c.glow_strength) or 1.0))
+
+    local function apply_glow(name, color, alpha)
+      local spec = groups[name]
+      if spec and not spec.link then
+        spec.bg = util.blend(color, base_bg, alpha * strength)
+      end
+    end
+
+    local glow_targets = {
+      -- code semantics
+      { 'Function', p.green2, 0.14 },
+      { '@function', p.green, 0.14 },
+      { '@function.call', p.green, 0.14 },
+      { '@function.method', p.green, 0.14 },
+      { '@function.method.call', p.green, 0.14 },
+      { 'Keyword', p.pink, 0.12 },
+      { '@keyword', p.pink, 0.12 },
+      { '@keyword.return', p.pink, 0.15 },
+      { 'Type', p.cyan, 0.12 },
+      { '@type', p.cyan, 0.12 },
+      -- editor accents
+      { 'MatchParen', c.bolt and p.green_bolt or p.green3, 0.26 },
+      { 'Search', p.green3, 0.24 },
+      { 'CurSearch', p.green2, 0.30 },
+      { 'IncSearch', p.orange, 0.22 },
+      -- diagnostics
+      { 'DiagnosticVirtualTextError', p.red, 0.18 },
+      { 'DiagnosticVirtualTextWarn', p.orange, 0.18 },
+      { 'DiagnosticVirtualTextInfo', p.cyan, 0.18 },
+      { 'DiagnosticVirtualTextHint', c.bolt and p.green_bolt or p.green3, 0.18 },
+      -- plugin accents
+      { 'TelescopeMatching', p.green3, 0.18 },
+      { 'CmpItemAbbrMatch', p.green2, 0.16 },
+      { 'CmpItemAbbrMatchFuzzy', p.green3, 0.16 },
+    }
+
+    for _, item in ipairs(glow_targets) do
+      apply_glow(item[1], item[2], item[3])
+    end
+  end
+
   -- 6. italic / bold / transparent の後処理
   -- italic.comments が false → @comment / Comment の italic を除去
   if not c.italic.comments then
