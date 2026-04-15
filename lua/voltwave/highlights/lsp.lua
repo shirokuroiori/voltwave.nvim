@@ -1,6 +1,5 @@
 return function(p, c)
   return {
-    -- 型系 → @type に準拠
     ['@lsp.type.namespace']      = { link = '@module' },
     ['@lsp.type.type']           = { link = '@type' },
     ['@lsp.type.class']          = { link = '@type' },
@@ -24,14 +23,12 @@ return function(p, c)
     ['@lsp.type.regexp']         = { link = '@string.regexp' },
     ['@lsp.type.operator']       = { fg = p.fg_dim },
 
-    -- 修飾子
     ['@lsp.mod.readonly']        = { fg = p.purple_neon },
     ['@lsp.mod.deprecated']      = { strikethrough = true },
     ['@lsp.mod.defaultLibrary']  = { italic = true },
     ['@lsp.mod.static']          = { italic = true },
     ['@lsp.mod.async']           = { italic = true },
 
-    -- 組み合わせ
     ['@lsp.typemod.function.defaultLibrary']  = { fg = p.green2, italic = true },
     ['@lsp.typemod.variable.defaultLibrary']  = { fg = p.purple, italic = true },
     ['@lsp.typemod.variable.readonly']        = { fg = p.purple_neon },

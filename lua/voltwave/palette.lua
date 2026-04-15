@@ -18,8 +18,8 @@ M.line_hl   = '#2D1745'
 M.line_nr       = '#57367c'  -- fluoromachine LineNr fg
 M.win_separator = '#8c57c7'  -- fluoromachine WinSeparator fg
 
--- 緑（3段階・主役を Dracula に）
-M.green     = '#50fa7b'  -- Dracula green。関数・主役
+-- 緑（3段階）
+M.green     = '#50fa7b'  -- 関数・主役
 M.green2    = '#72F1B8'  -- fluoromachine green。アクセント・diff add
 M.green3    = '#8EF4C6'  -- fluoromachine bright green。マッチ・カーソル
 M.green_bright = '#1ed760' -- cursor line number 用の明るい緑
