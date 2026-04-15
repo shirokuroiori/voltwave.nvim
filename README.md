@@ -51,6 +51,7 @@ vim.cmd.colorscheme('voltwave')
 ```lua
 require('voltwave').setup({
   transparent = false,        -- true: Normal/NormalNC/SignColumn etc. bg = NONE
+  bolt = true,                -- 稲妻ライム緑 (#B6FF00) を MatchParen, LSP Hint, TODO コメントで使う (default: true)
   italic = {
     comments   = true,
     keywords   = false,
@@ -80,6 +81,8 @@ require('voltwave').setup({
 })
 vim.cmd.colorscheme('voltwave')
 ```
+
+voltwave という名前にちなんだ稲妻演出です。`bolt = false` にするとフォールバック色 (`green3`) が使われます。
 
 ## lualine
 

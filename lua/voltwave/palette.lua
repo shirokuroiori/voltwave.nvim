@@ -22,6 +22,7 @@ M.win_separator  = '#8c57c7' -- fluoromachine WinSeparator fg
 M.green          = '#50fa7b' -- 関数・主役
 M.green2         = '#72F1B8' -- fluoromachine green。アクセント・diff add
 M.green3         = '#8EF4C6' -- fluoromachine bright green。マッチ・カーソル
+M.green_bolt     = '#B6FF00'  -- voltwave 稲妻色、ライム緑
 M.green_bright   = '#1ed760' -- cursor line number 用の明るい緑
 
 -- アクセント（fluoromachine オリジナル）

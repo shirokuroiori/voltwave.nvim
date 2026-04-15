@@ -2,6 +2,7 @@ local M = {}
 
 local defaults = {
   transparent = false,
+  bolt = true,  -- 稲妻ライム緑 (#B6FF00) を MatchParen, Hint, TODO で使う
   italic = {
     comments   = true,
     keywords   = false,

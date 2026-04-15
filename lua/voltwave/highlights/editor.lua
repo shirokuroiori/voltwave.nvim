@@ -22,7 +22,7 @@ return function(p, c)
     CurSearch       = { fg = p.bg,       bg = p.green2, bold = true },
     IncSearch       = { fg = p.bg,       bg = p.orange, bold = true },
     Substitute      = { fg = p.bg,       bg = p.pink },
-    MatchParen      = { fg = p.pink_neon, bold = true },
+    MatchParen      = { fg = c.bolt and p.green_bolt or p.green3, bold = true },
     NonText         = { fg = p.fg_dim },
     Whitespace      = { fg = p.surface },
     SpecialKey      = { fg = p.fg_dim },

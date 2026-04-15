@@ -70,7 +70,7 @@ return function(p, c)
     ['@comment.documentation']  = { fg = p.comment, italic = c.italic.comments },
     ['@comment.error']          = { fg = p.red,     bold = true },
     ['@comment.warning']        = { fg = p.orange,  bold = true },
-    ['@comment.todo']           = { fg = p.bg,      bg = p.green3, bold = true },
+    ['@comment.todo']           = { fg = p.bg, bg = c.bolt and p.green_bolt or p.green3, bold = true },
     ['@comment.note']           = { fg = p.bg,      bg = p.cyan,   bold = true },
     ['@tag']                    = { fg = p.pink },
     ['@tag.attribute']          = { fg = p.green2,  italic = true },
