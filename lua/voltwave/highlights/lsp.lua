@@ -6,7 +6,7 @@ return function(p, c)
     ['@lsp.type.enum']           = { link = '@type' },
     ['@lsp.type.interface']      = { link = '@type' },
     ['@lsp.type.struct']         = { link = '@type' },
-    ['@lsp.type.typeParameter']  = { fg = p.cyan, italic = true },
+    ['@lsp.type.typeParameter']  = { fg = p.purple, italic = c.italic.types },
     ['@lsp.type.parameter']      = { link = '@variable.parameter' },
     ['@lsp.type.variable']       = { link = '@variable' },
     ['@lsp.type.property']       = { link = '@variable.member' },

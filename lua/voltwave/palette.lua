@@ -28,7 +28,8 @@ M.green_bright   = '#1ed760' -- cursor line number 用の明るい緑
 -- アクセント（fluoromachine オリジナル）
 M.pink           = '#FC199A'
 M.purple         = '#AF6DF9'
-M.cyan           = '#4DEEFF'
+M.cyan           = '#38daff'
+-- M.cyan           = '#4DEEFF'
 M.yellow         = '#FFCC00'
 M.orange         = '#FF8B39'
 M.red            = '#FE4450'

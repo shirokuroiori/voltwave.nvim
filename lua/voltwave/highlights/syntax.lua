@@ -26,7 +26,7 @@ return function(p, c)
     Define         = { fg = p.pink_neon },
     Macro          = { fg = p.purple_neon },
     PreCondit      = { fg = p.pink_neon },
-    Type           = vim.tbl_extend('force', { fg = p.cyan },   type_style),
+    Type           = vim.tbl_extend('force', { fg = p.purple }, type_style),
     StorageClass   = { fg = p.pink_neon, italic = true },
     Structure      = { fg = p.pink_neon },
     Typedef        = vim.tbl_extend('force', { fg = p.cyan },   type_style),

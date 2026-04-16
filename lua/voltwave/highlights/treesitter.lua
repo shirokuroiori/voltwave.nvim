@@ -12,7 +12,7 @@ return function(p, c)
     ['@constant']              = { fg = p.purple_neon },
     ['@constant.builtin']      = { fg = p.purple_neon, bold = true },
     ['@constant.macro']        = { fg = p.purple_neon },
-    ['@module']                = { fg = p.cyan,   italic = true },
+    ['@module']                = { fg = p.purple, italic = true },
     ['@label']                 = { fg = p.pink },
 
     -- リテラル
@@ -35,10 +35,10 @@ return function(p, c)
     ['@function.macro']        = { fg = p.green3 },
     ['@function.method']       = { fg = p.green, italic = c.italic.functions, bold = true },
     ['@function.method.call']  = { fg = p.green, italic = c.italic.functions, bold = true },
-    ['@constructor']           = { fg = p.cyan },
-    ['@type']                  = { fg = p.cyan,   italic = c.italic.types },
-    ['@type.builtin']          = { fg = p.cyan,   italic = c.italic.types, bold = true },
-    ['@type.definition']       = { fg = p.cyan,   italic = c.italic.types },
+    ['@constructor']           = { fg = p.purple },
+    ['@type']                  = { fg = p.purple, italic = c.italic.types },
+    ['@type.builtin']          = { fg = p.pink, italic = c.italic.types },
+    ['@type.definition']       = { fg = p.purple, italic = c.italic.types },
     ['@type.qualifier']        = { fg = p.pink },
     ['@attribute']             = { fg = p.green,  italic = true },
     ['@property']              = { fg = p.cyan },
