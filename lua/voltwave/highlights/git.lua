@@ -1,9 +1,8 @@
 return function(p, c)
   local groups = {
-    DiffAdd    = { fg = p.green_bright, bg = p.diff_add_bg },
-    DiffChange = { fg = p.cyan, bg = p.diff_change_bg },
-    DiffDelete = { fg = p.red, bg = p.diff_delete_bg },
-    DiffText   = { fg = p.green2, bg = p.diff_text_bg },
+    DiffAdd    = { bg = "#002302" },
+    DiffChange = { bg = p.green },
+    DiffDelete = { bg = "#390102" },
   }
 
   if c.plugins.gitsigns then
