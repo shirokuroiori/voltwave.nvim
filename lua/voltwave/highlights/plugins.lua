@@ -59,9 +59,11 @@ return function(p, c)
       NeoTreeFileNameOpened  = { fg = p.green2 },
       NeoTreeIndentMarker    = { fg = p.fg_dim },
       NeoTreeGitModified     = { fg = p.cyan },
+      NeoTreeGitUnstaged     = { fg = p.cyan },
+      NeoTreeGitStaged       = { fg = p.cyan },
       NeoTreeGitAdded        = { fg = p.green },
       NeoTreeGitDeleted      = { fg = p.red },
-      NeoTreeGitUntracked    = { fg = p.green2 },
+      NeoTreeGitUntracked    = { fg = p.green_bright },
       NeoTreeGitIgnored      = { fg = p.fg_dim },
       NeoTreeGitConflict     = { fg = p.orange },
     }

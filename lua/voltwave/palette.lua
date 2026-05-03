@@ -28,8 +28,7 @@ M.green_bright   = '#1ed760' -- cursor line number 用の明るい緑
 -- アクセント（fluoromachine オリジナル）
 M.pink           = '#FC199A'
 M.purple         = '#AF6DF9'
-M.cyan           = '#38daff'
--- M.cyan           = '#4DEEFF'
+M.cyan           = '#4DEEFF'
 M.yellow         = '#FFCC00'
 M.orange         = '#FF8B39'
 M.red            = '#FE4450'
@@ -41,9 +40,9 @@ M.error          = M.red
 M.hint           = M.green3
 
 -- diff 用の blend 済み背景
-M.diff_add_bg    = '#1a2818'
-M.diff_change_bg = '#1a1f2c'
-M.diff_delete_bg = '#2c1a1a'
-M.diff_text_bg   = '#22381e'
+M.diff_add_bg    = '#002302'
+-- M.diff_change_bg = '#1a1f2c'
+M.diff_delete_bg = '#390102'
+-- M.diff_text_bg   = '#22381e'
 
 return M
