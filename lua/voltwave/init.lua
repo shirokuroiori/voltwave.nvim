@@ -54,8 +54,8 @@ function M.load()
       { '@type', p.cyan, 0.12 },
       -- editor accents
       { 'MatchParen', c.bolt and p.green_bolt or p.green3, 0.26 },
-      { 'Search', p.green3, 0.24 },
-      { 'CurSearch', p.green2, 0.30 },
+      { 'Search', p.orange, 0.24 },
+      { 'CurSearch', p.cyan,   0.30 },
       { 'IncSearch', p.orange, 0.22 },
       -- diagnostics
       { 'DiagnosticVirtualTextError', p.red, 0.18 },
