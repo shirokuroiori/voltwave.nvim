@@ -34,10 +34,6 @@ M.yellow         = '#FFCC00'
 M.orange         = '#FF8B39'
 M.red            = '#FE4450'
 
--- 旧名エイリアス（既存コードからの参照を壊さないため）
-M.pink_neon      = M.pink
-M.purple_neon    = M.purple
-
 -- 意味的エイリアス
 M.info           = M.cyan
 M.warn           = M.orange

@@ -6,12 +6,12 @@ return function(p, c)
   return {
     -- 識別子
     ['@variable']              = { fg = p.fg },
-    ['@variable.builtin']      = { fg = p.purple_neon, italic = c.italic.variables },
+    ['@variable.builtin']      = { fg = p.purple, italic = c.italic.variables },
     ['@variable.parameter']    = { fg = p.orange, italic = c.italic.parameters },
     ['@variable.member']       = { fg = p.cyan },
-    ['@constant']              = { fg = p.purple_neon },
-    ['@constant.builtin']      = { fg = p.purple_neon, bold = true },
-    ['@constant.macro']        = { fg = p.purple_neon },
+    ['@constant']              = { fg = p.purple },
+    ['@constant.builtin']      = { fg = p.purple, bold = true },
+    ['@constant.macro']        = { fg = p.purple },
     ['@module']                = { fg = p.purple, italic = true },
     ['@label']                 = { fg = p.pink },
 
@@ -26,7 +26,7 @@ return function(p, c)
     ['@character.special']     = { fg = p.pink },
     ['@number']                = { fg = p.orange },
     ['@number.float']          = { fg = p.orange },
-    ['@boolean']               = { fg = p.purple_neon },
+    ['@boolean']               = { fg = p.purple },
 
     -- 関数・型
     ['@function']              = { fg = p.green, italic = c.italic.functions, bold = true },
@@ -45,21 +45,21 @@ return function(p, c)
     ['@field']                 = { fg = p.cyan },
 
     -- キーワード・演算子
-    ['@keyword']                      = { fg = p.pink_neon, bold = c.bold.keywords },
-    ['@keyword.function']             = { fg = p.pink_neon, italic = true },
-    ['@keyword.operator']             = { fg = p.pink_neon },
-    ['@keyword.import']               = { fg = p.pink_neon, italic = true },
-    ['@keyword.type']                 = { fg = p.pink_neon },
-    ['@keyword.modifier']             = { fg = p.pink_neon, italic = true },
-    ['@keyword.repeat']               = { fg = p.pink_neon },
-    ['@keyword.return']               = { fg = p.pink_neon, bold = true },
+    ['@keyword']                      = { fg = p.pink, bold = c.bold.keywords },
+    ['@keyword.function']             = { fg = p.pink, italic = true },
+    ['@keyword.operator']             = { fg = p.pink },
+    ['@keyword.import']               = { fg = p.pink, italic = true },
+    ['@keyword.type']                 = { fg = p.pink },
+    ['@keyword.modifier']             = { fg = p.pink, italic = true },
+    ['@keyword.repeat']               = { fg = p.pink },
+    ['@keyword.return']               = { fg = p.pink, bold = true },
     ['@keyword.debug']                = { fg = p.orange },
-    ['@keyword.exception']            = { fg = p.pink_neon },
-    ['@keyword.conditional']          = { fg = p.pink_neon },
-    ['@keyword.conditional.ternary']  = { fg = p.pink_neon },
-    ['@keyword.directive']            = { fg = p.pink_neon },
-    ['@keyword.directive.define']     = { fg = p.pink_neon },
-    ['@keyword.coroutine']            = { fg = p.pink_neon, italic = true },
+    ['@keyword.exception']            = { fg = p.pink },
+    ['@keyword.conditional']          = { fg = p.pink },
+    ['@keyword.conditional.ternary']  = { fg = p.pink },
+    ['@keyword.directive']            = { fg = p.pink },
+    ['@keyword.directive.define']     = { fg = p.pink },
+    ['@keyword.coroutine']            = { fg = p.pink, italic = true },
     ['@operator']                     = { fg = p.pink },
 
     -- 句読点・コメント・タグ

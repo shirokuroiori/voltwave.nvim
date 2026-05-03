@@ -9,7 +9,7 @@ function M.get()
     bg_float     = p.bg_float,
     fg           = p.fg,
     fg_dim       = p.fg_dim,
-    normal_mode  = p.purple_neon, -- NORMAL は緑（主役色）
+    normal_mode  = p.purple, -- NORMAL は緑（主役色）
     insert_mode  = p.green,       -- INSERT は一段濃い緑
     visual_mode  = p.orange,      -- VISUAL はオレンジ
     replace_mode = p.red,

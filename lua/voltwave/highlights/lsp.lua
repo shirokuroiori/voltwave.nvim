@@ -10,20 +10,20 @@ return function(p, c)
     ['@lsp.type.parameter']      = { link = '@variable.parameter' },
     ['@lsp.type.variable']       = { link = '@variable' },
     ['@lsp.type.property']       = { link = '@variable.member' },
-    ['@lsp.type.enumMember']     = { fg = p.purple_neon, bold = true },
+    ['@lsp.type.enumMember']     = { fg = p.purple, bold = true },
     ['@lsp.type.function']       = { link = '@function' },
     ['@lsp.type.method']         = { link = '@function.method' },
     ['@lsp.type.macro']          = { fg = p.green3 },
     ['@lsp.type.decorator']      = { fg = p.green, italic = true },
     ['@lsp.type.keyword']        = { link = '@keyword' },
-    ['@lsp.type.modifier']       = { fg = p.pink_neon, italic = true },
+    ['@lsp.type.modifier']       = { fg = p.pink, italic = true },
     ['@lsp.type.comment']        = { link = '@comment' },
     ['@lsp.type.string']         = { link = '@string' },
     ['@lsp.type.number']         = { link = '@number' },
     ['@lsp.type.regexp']         = { link = '@string.regexp' },
     ['@lsp.type.operator']       = { fg = p.fg_dim },
 
-    ['@lsp.mod.readonly']        = { fg = p.purple_neon },
+    ['@lsp.mod.readonly']        = { fg = p.purple },
     ['@lsp.mod.deprecated']      = { strikethrough = true },
     ['@lsp.mod.defaultLibrary']  = { italic = true },
     ['@lsp.mod.static']          = { italic = true },
@@ -31,7 +31,7 @@ return function(p, c)
 
     ['@lsp.typemod.function.defaultLibrary']  = { fg = p.green2, italic = true },
     ['@lsp.typemod.variable.defaultLibrary']  = { fg = p.purple, italic = true },
-    ['@lsp.typemod.variable.readonly']        = { fg = p.purple_neon },
+    ['@lsp.typemod.variable.readonly']        = { fg = p.purple },
     ['@lsp.typemod.method.defaultLibrary']    = { fg = p.green2, italic = true },
   }
 end

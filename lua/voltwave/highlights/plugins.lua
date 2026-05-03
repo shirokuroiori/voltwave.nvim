@@ -101,9 +101,9 @@ return function(p, c)
       BufferLineNumbersVisible             = { fg = p.fg_dim,    bg = p.bg_alt },
       BufferLineNumbersSelected            = { fg = p.green2,    bg = p.bg,     bold = true },
 
-      BufferLinePick                       = { fg = p.pink_neon, bg = p.bg_alt, bold = true },
-      BufferLinePickVisible                = { fg = p.pink_neon, bg = p.bg_alt, bold = true },
-      BufferLinePickSelected               = { fg = p.pink_neon, bg = p.bg,     bold = true },
+      BufferLinePick                       = { fg = p.pink, bg = p.bg_alt, bold = true },
+      BufferLinePickVisible                = { fg = p.pink, bg = p.bg_alt, bold = true },
+      BufferLinePickSelected               = { fg = p.pink, bg = p.bg,     bold = true },
 
       BufferLineTab                        = { fg = p.fg_dim,    bg = p.bg_alt },
       BufferLineTabSelected                = { fg = p.green2,    bg = p.bg },
