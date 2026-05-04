@@ -5,7 +5,7 @@ return function(p, c)
 
   return {
     -- 識別子
-    ['@variable']              = { fg = p.fg },
+    ['@variable']              = { fg = p.green },
     ['@variable.builtin']      = { fg = p.purple, italic = c.italic.variables },
     ['@variable.parameter']    = { fg = p.orange, italic = c.italic.parameters },
     ['@variable.member']       = { fg = p.cyan },
@@ -24,20 +24,20 @@ return function(p, c)
     ['@string.special.url']    = { fg = p.cyan, underline = true },
     ['@character']             = { fg = p.yellow },
     ['@character.special']     = { fg = p.pink },
-    ['@number']                = { fg = p.orange },
-    ['@number.float']          = { fg = p.orange },
+    ['@number']                = { fg = p.purple },
+    ['@number.float']          = { fg = p.purple },
     ['@boolean']               = { fg = p.purple },
 
     -- 関数・型
-    ['@function']              = { fg = p.green, italic = c.italic.functions, bold = true },
-    ['@function.builtin']      = { fg = p.green, italic = true, bold = true },
-    ['@function.call']         = { fg = p.green, italic = c.italic.functions, bold = true },
-    ['@function.macro']        = { fg = p.green3 },
-    ['@function.method']       = { fg = p.green, italic = c.italic.functions, bold = true },
-    ['@function.method.call']  = { fg = p.green, italic = c.italic.functions, bold = true },
+    ['@function']              = { fg = p.cyan, italic = c.italic.functions, bold = true },
+    ['@function.builtin']      = { fg = p.cyan, italic = true, bold = true },
+    ['@function.call']         = { fg = p.cyan, italic = c.italic.functions, bold = true },
+    ['@function.macro']        = { fg = p.cyan },
+    ['@function.method']       = { fg = p.cyan, italic = c.italic.functions, bold = true },
+    ['@function.method.call']  = { fg = p.cyan, italic = c.italic.functions, bold = true },
     ['@constructor']           = { fg = p.purple },
     ['@type']                  = { fg = p.purple, italic = c.italic.types },
-    ['@type.builtin']          = { fg = p.pink, italic = c.italic.types },
+    ['@type.builtin']          = { fg = p.cyan, italic = c.italic.types },
     ['@type.definition']       = { fg = p.purple, italic = c.italic.types },
     ['@type.qualifier']        = { fg = p.pink },
     ['@attribute']             = { fg = p.green,  italic = true },
@@ -63,7 +63,7 @@ return function(p, c)
     ['@operator']                     = { fg = p.pink },
 
     -- 句読点・コメント・タグ
-    ['@punctuation.delimiter']  = { fg = p.fg },
+    ['@punctuation.delimiter']  = { fg = p.pink },
     ['@punctuation.bracket']    = { fg = p.fg },
     ['@punctuation.special']    = { fg = p.pink },
     ['@comment']                = { fg = p.comment, italic = c.italic.comments },
@@ -103,5 +103,14 @@ return function(p, c)
     ['@diff.plus']   = { fg = p.green },
     ['@diff.minus']  = { fg = p.red },
     ['@diff.delta']  = { fg = p.cyan },
+
+    -- prisma
+    ['@type.prisma']            = { fg = p.purple },
+    ['@type.definition.prisma'] = { fg = p.purple },
+    ['@property.prisma']        = { fg = p.cyan },
+    ['@variable.member.prisma'] = { fg = p.cyan },
+    ['@function.prisma']        = { fg = p.green, bold = true },
+    ['@function.call.prisma']   = { fg = p.green, bold = true },
+    ['@operator.prisma']        = { fg = p.green },
   }
 end
