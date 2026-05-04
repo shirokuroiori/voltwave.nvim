@@ -30,10 +30,10 @@ return function(p, c)
     local tel = {
       TelescopeNormal         = { fg = p.fg,       bg = p.bg_float },
       TelescopeBorder         = { fg = p.green,    bg = p.bg_float },
-      TelescopePromptNormal   = { fg = p.fg_bright, bg = p.surface },
-      TelescopePromptBorder   = { fg = p.green,   bg = p.surface },
-      TelescopePromptTitle    = { fg = p.bg,       bg = p.green, bold = true },
-      TelescopePromptPrefix   = { fg = p.green,   bg = p.surface },
+      TelescopePromptNormal   = { fg = p.fg_bright, bg = p.bg_float },
+      TelescopePromptBorder   = { fg = p.green,    bg = p.bg_float },
+      TelescopePromptTitle    = { fg = p.bg,        bg = p.green, bold = true },
+      TelescopePromptPrefix   = { fg = p.green,    bg = p.bg_float },
       TelescopeResultsNormal  = { fg = p.fg,       bg = p.bg_float },
       TelescopeResultsBorder  = { fg = p.green,    bg = p.bg_float },
       TelescopeResultsTitle   = { fg = p.green,   bg = p.bg_float },
@@ -207,6 +207,19 @@ return function(p, c)
       rm['RenderMarkdownH' .. i .. 'Bg'] = { fg = color, bg = blend(color, p.bg, 0.12) }
     end
     groups = vim.tbl_extend('force', groups, rm)
+  end
+
+  -- rainbow-delimiters.nvim
+  if c.plugins.rainbow_delimiters then
+    groups = vim.tbl_extend('force', groups, {
+      RainbowDelimiterRed    = { fg = p.red },
+      RainbowDelimiterYellow = { fg = p.yellow },
+      RainbowDelimiterBlue   = { fg = p.cyan },
+      RainbowDelimiterOrange = { fg = p.orange },
+      RainbowDelimiterGreen  = { fg = p.green },
+      RainbowDelimiterViolet = { fg = p.purple },
+      RainbowDelimiterCyan   = { fg = p.pink },
+    })
   end
 
   -- lazygit
