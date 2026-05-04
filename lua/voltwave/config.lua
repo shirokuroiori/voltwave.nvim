@@ -8,14 +8,14 @@ local defaults = {
   italic = {
     comments   = true,
     keywords   = false,
-    functions  = false,
+    functions  = true,
     variables  = false,
     types      = true,
     parameters = true,
     booleans   = false,
   },
   bold = {
-    functions = false,
+    functions = true,
     keywords  = false,
   },
   plugins = {
@@ -29,7 +29,8 @@ local defaults = {
     lualine          = true,
     which_key        = true,
     lazygit          = true,
-    render_markdown  = true,
+    render_markdown    = true,
+    rainbow_delimiters = true,
   },
   overrides = {},
 }
