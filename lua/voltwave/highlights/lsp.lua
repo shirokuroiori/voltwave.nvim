@@ -29,9 +29,9 @@ return function(p, c)
     ['@lsp.mod.static']          = { italic = true },
     ['@lsp.mod.async']           = { italic = true },
 
-    ['@lsp.typemod.function.defaultLibrary']  = { fg = p.green, italic = true },
+    ['@lsp.typemod.function.defaultLibrary']  = { fg = p.cyan, italic = true },
     ['@lsp.typemod.variable.defaultLibrary']  = { fg = p.purple, italic = true },
     ['@lsp.typemod.variable.readonly']        = { fg = p.purple },
-    ['@lsp.typemod.method.defaultLibrary']    = { fg = p.green, italic = true },
+    ['@lsp.typemod.method.defaultLibrary']    = { fg = p.cyan, italic = true },
   }
 end

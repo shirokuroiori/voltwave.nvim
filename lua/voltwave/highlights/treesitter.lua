@@ -5,7 +5,7 @@ return function(p, c)
 
   return {
     -- 識別子
-    ['@variable']              = { fg = p.green },
+    ['@variable']              = { fg = p.fg },
     ['@variable.builtin']      = { fg = p.purple, italic = c.italic.variables },
     ['@variable.parameter']    = { fg = p.orange, italic = c.italic.parameters },
     ['@variable.member']       = { fg = p.cyan },
@@ -31,7 +31,7 @@ return function(p, c)
     -- 関数・型
     ['@function']              = { fg = p.cyan, italic = c.italic.functions, bold = true },
     ['@function.builtin']      = { fg = p.cyan, italic = true, bold = true },
-    ['@function.call']         = { fg = p.cyan, italic = c.italic.functions, bold = true },
+    ['@function.call']         = { fg = p.green, italic = c.italic.functions, bold = true },
     ['@function.macro']        = { fg = p.cyan },
     ['@function.method']       = { fg = p.cyan, italic = c.italic.functions, bold = true },
     ['@function.method.call']  = { fg = p.cyan, italic = c.italic.functions, bold = true },
@@ -82,13 +82,13 @@ return function(p, c)
     ['@markup.italic']            = { fg = p.yellow, italic = true },
     ['@markup.strikethrough']     = { fg = p.fg_dim, strikethrough = true },
     ['@markup.underline']         = { underline = true },
-    ['@markup.heading']           = { fg = p.purple, bold = true },
-    ['@markup.heading.1']         = { fg = p.green, bold = true },
+    ['@markup.heading']           = { fg = p.pink, bold = true },
+    ['@markup.heading.1']         = { fg = p.purple, bold = true },
     ['@markup.heading.2']         = { fg = p.cyan,   bold = true },
-    ['@markup.heading.3']         = { fg = p.purple, bold = true },
-    ['@markup.heading.4']         = { fg = p.pink,   bold = true },
-    ['@markup.heading.5']         = { fg = p.orange, bold = true },
-    ['@markup.heading.6']         = { fg = p.yellow, bold = true },
+    ['@markup.heading.3']         = { fg = p.green, bold = true },
+    ['@markup.heading.4']         = { fg = p.green_bolt,   bold = true },
+    ['@markup.heading.5']         = { fg = p.yellow, bold = true },
+    ['@markup.heading.6']         = { fg = p.orange, bold = true },
     ['@markup.quote']             = { fg = p.yellow, italic = true },
     ['@markup.math']              = { fg = p.cyan },
     ['@markup.link']              = { fg = p.cyan },
@@ -106,9 +106,9 @@ return function(p, c)
     ['@diff.delta']  = { fg = p.cyan },
 
     -- prisma
-    ['@type.prisma']            = { fg = p.purple },
+    ['@attribute.prisma']       = { fg = p.cyan, italic = true },
     ['@type.definition.prisma'] = { fg = p.purple },
-    ['@property.prisma']        = { fg = p.cyan },
+    ['@property.prisma']        = { fg = p.purple },
     ['@variable.member.prisma'] = { fg = p.cyan },
     ['@function.prisma']        = { fg = p.green, bold = true },
     ['@function.call.prisma']   = { fg = p.green, bold = true },

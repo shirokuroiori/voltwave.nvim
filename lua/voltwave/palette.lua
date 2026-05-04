@@ -15,12 +15,12 @@ M.line_hl        = '#2D1745'
 M.line_nr        = '#57367c' -- fluoromachine LineNr fg
 M.win_separator  = '#8c57c7' -- fluoromachine WinSeparator fg
 
-M.green_bolt     = '#B6FF00' -- voltwave
 
 M.pink           = '#ff6DBD'
 M.purple         = '#AF6DF9'
 M.cyan           = '#27d7e8'
 M.green          = '#4DFFAD'
+M.green_bolt     = '#B6FF00' -- voltwave
 M.yellow         = '#FFE94D'
 M.orange         = '#FF984D'
 M.red            = '#FF4D4D'
