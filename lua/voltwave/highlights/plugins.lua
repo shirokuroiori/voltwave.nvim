@@ -183,7 +183,26 @@ return function(p, c)
       NotifyDEBUGBody            = { fg = p.fg,     bg = p.bg },
       NotifyTRACEBody            = { fg = p.fg,     bg = p.bg },
     }
+    if c.transparent then
+      local notify_groups = {
+        'NotifyERRORBorder', 'NotifyWARNBorder', 'NotifyINFOBorder', 'NotifyDEBUGBorder', 'NotifyTRACEBorder',
+        'NotifyERRORIcon',   'NotifyWARNIcon',   'NotifyINFOIcon',   'NotifyDEBUGIcon',   'NotifyTRACEIcon',
+        'NotifyERRORTitle',  'NotifyWARNTitle',  'NotifyINFOTitle',  'NotifyDEBUGTitle',  'NotifyTRACETitle',
+        'NotifyERRORBody',   'NotifyWARNBody',   'NotifyINFOBody',   'NotifyDEBUGBody',   'NotifyTRACEBody',
+      }
+      for _, name in ipairs(notify_groups) do
+        if notify[name] then notify[name].bg = nil end
+      end
+    end
     groups = vim.tbl_extend('force', groups, notify)
+  end
+
+  -- which-key
+  if c.plugins.which_key then
+    local wk = {
+      WhichKeyDesc = { fg = p.cyan },
+    }
+    groups = vim.tbl_extend('force', groups, wk)
   end
 
   return groups

@@ -27,6 +27,7 @@ local defaults = {
     gitsigns         = true,
     notify           = true,
     lualine          = true,
+    which_key        = true,
   },
   overrides = {},
 }
