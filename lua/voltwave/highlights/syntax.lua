@@ -13,7 +13,7 @@ return function(p, c)
     Boolean        = { fg = p.purple },
     Float          = { fg = p.orange },
     Identifier     = { fg = p.fg },
-    Function       = vim.tbl_extend('force', { fg = p.green2 }, func_style),
+    Function       = vim.tbl_extend('force', { fg = p.green }, func_style),
     Statement      = vim.tbl_extend('force', { fg = p.pink }, kw_style),
     Conditional    = vim.tbl_extend('force', { fg = p.pink }, kw_style),
     Repeat         = vim.tbl_extend('force', { fg = p.pink }, kw_style),
@@ -34,11 +34,11 @@ return function(p, c)
     SpecialChar    = { fg = p.pink },
     Tag            = { fg = p.pink },
     Delimiter      = { fg = p.fg_dim },
-    SpecialComment = { fg = p.green2, italic = true },
+    SpecialComment = { fg = p.green, italic = true },
     Debug          = { fg = p.orange },
     Underlined     = { fg = p.cyan, underline = true },
     Ignore         = { fg = p.fg_dim },
     Error          = { fg = p.red, bold = true },
-    Todo           = { fg = p.bg, bg = p.green3, bold = true },
+    Todo           = { fg = p.bg, bg = p.green, bold = true },
   }
 end

@@ -42,7 +42,7 @@ function M.load()
 
     local glow_targets = {
       -- code semantics
-      { 'Function', p.green2, 0.14 },
+      { 'Function', p.green, 0.14 },
       { '@function', p.green, 0.14 },
       { '@function.call', p.green, 0.14 },
       { '@function.method', p.green, 0.14 },
@@ -53,7 +53,7 @@ function M.load()
       { 'Type', p.cyan, 0.12 },
       { '@type', p.cyan, 0.12 },
       -- editor accents
-      { 'MatchParen', c.bolt and p.green_bolt or p.green3, 0.26 },
+      { 'MatchParen', c.bolt and p.green_bolt or p.green, 0.26 },
       { 'Search', p.orange, 0.24 },
       { 'CurSearch', p.cyan,   0.30 },
       { 'IncSearch', p.orange, 0.22 },
@@ -61,11 +61,11 @@ function M.load()
       { 'DiagnosticVirtualTextError', p.red, 0.18 },
       { 'DiagnosticVirtualTextWarn', p.orange, 0.18 },
       { 'DiagnosticVirtualTextInfo', p.cyan, 0.18 },
-      { 'DiagnosticVirtualTextHint', c.bolt and p.green_bolt or p.green3, 0.18 },
+      { 'DiagnosticVirtualTextHint', c.bolt and p.green_bolt or p.green, 0.18 },
       -- plugin accents
-      { 'TelescopeMatching', p.green3, 0.18 },
-      { 'CmpItemAbbrMatch', p.green2, 0.16 },
-      { 'CmpItemAbbrMatchFuzzy', p.green3, 0.16 },
+      { 'TelescopeMatching', p.green, 0.18 },
+      { 'CmpItemAbbrMatch', p.green, 0.16 },
+      { 'CmpItemAbbrMatchFuzzy', p.green, 0.16 },
     }
 
     for _, item in ipairs(glow_targets) do

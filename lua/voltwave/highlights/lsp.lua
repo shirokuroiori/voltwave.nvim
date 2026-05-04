@@ -13,7 +13,7 @@ return function(p, c)
     ['@lsp.type.enumMember']     = { fg = p.purple, bold = true },
     ['@lsp.type.function']       = { link = '@function' },
     ['@lsp.type.method']         = { link = '@function.method' },
-    ['@lsp.type.macro']          = { fg = p.green3 },
+    ['@lsp.type.macro']          = { fg = p.green },
     ['@lsp.type.decorator']      = { fg = p.green, italic = true },
     ['@lsp.type.keyword']        = { link = '@keyword' },
     ['@lsp.type.modifier']       = { fg = p.pink, italic = true },
@@ -29,9 +29,9 @@ return function(p, c)
     ['@lsp.mod.static']          = { italic = true },
     ['@lsp.mod.async']           = { italic = true },
 
-    ['@lsp.typemod.function.defaultLibrary']  = { fg = p.green2, italic = true },
+    ['@lsp.typemod.function.defaultLibrary']  = { fg = p.green, italic = true },
     ['@lsp.typemod.variable.defaultLibrary']  = { fg = p.purple, italic = true },
     ['@lsp.typemod.variable.readonly']        = { fg = p.purple },
-    ['@lsp.typemod.method.defaultLibrary']    = { fg = p.green2, italic = true },
+    ['@lsp.typemod.method.defaultLibrary']    = { fg = p.green, italic = true },
   }
 end

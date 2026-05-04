@@ -6,12 +6,12 @@ return function(p, c)
     local cmp = {
       CmpItemAbbr             = { fg = p.fg },
       CmpItemAbbrDeprecated   = { fg = p.fg_dim, strikethrough = true },
-      CmpItemAbbrMatch        = { fg = p.green2, bold = true },
-      CmpItemAbbrMatchFuzzy   = { fg = p.green3, bold = true },
+      CmpItemAbbrMatch        = { fg = p.green, bold = true },
+      CmpItemAbbrMatchFuzzy   = { fg = p.green, bold = true },
       CmpItemKind             = { fg = p.cyan },
       CmpItemMenu             = { fg = p.fg_dim, italic = true },
-      CmpItemKindFunction     = { fg = p.green2 },
-      CmpItemKindMethod       = { fg = p.green2 },
+      CmpItemKindFunction     = { fg = p.green },
+      CmpItemKindMethod       = { fg = p.green },
       CmpItemKindVariable     = { fg = p.fg },
       CmpItemKindKeyword      = { fg = p.pink },
       CmpItemKindClass        = { fg = p.cyan },
@@ -31,18 +31,18 @@ return function(p, c)
       TelescopeNormal         = { fg = p.fg,       bg = p.bg_float },
       TelescopeBorder         = { fg = p.green,    bg = p.bg_float },
       TelescopePromptNormal   = { fg = p.fg_bright, bg = p.surface },
-      TelescopePromptBorder   = { fg = p.green2,   bg = p.surface },
-      TelescopePromptTitle    = { fg = p.bg,       bg = p.green2, bold = true },
-      TelescopePromptPrefix   = { fg = p.green2,   bg = p.surface },
+      TelescopePromptBorder   = { fg = p.green,   bg = p.surface },
+      TelescopePromptTitle    = { fg = p.bg,       bg = p.green, bold = true },
+      TelescopePromptPrefix   = { fg = p.green,   bg = p.surface },
       TelescopeResultsNormal  = { fg = p.fg,       bg = p.bg_float },
       TelescopeResultsBorder  = { fg = p.green,    bg = p.bg_float },
-      TelescopeResultsTitle   = { fg = p.green2,   bg = p.bg_float },
+      TelescopeResultsTitle   = { fg = p.green,   bg = p.bg_float },
       TelescopePreviewNormal  = { fg = p.fg,       bg = p.bg_float },
       TelescopePreviewBorder  = { fg = p.green,    bg = p.bg_float },
       TelescopePreviewTitle   = { fg = p.bg,       bg = p.green, bold = true },
       TelescopeSelection      = { fg = p.fg_bright, bg = p.surface },
-      TelescopeSelectionCaret = { fg = p.green2,   bg = p.surface },
-      TelescopeMatching       = { fg = p.green3,   bold = true },
+      TelescopeSelectionCaret = { fg = p.green,   bg = p.surface },
+      TelescopeMatching       = { fg = p.green,   bold = true },
     }
     groups = vim.tbl_extend('force', groups, tel)
   end
@@ -54,16 +54,16 @@ return function(p, c)
       NeoTreeNormalNC        = { fg = p.fg,     bg = p.bg },
       NeoTreeDirectoryName   = { fg = p.yellow },
       NeoTreeDirectoryIcon   = { fg = p.yellow },
-      NeoTreeRootName        = { fg = p.green2, bold = true },
+      NeoTreeRootName        = { fg = p.green, bold = true },
       NeoTreeFileName        = { fg = p.fg },
-      NeoTreeFileNameOpened  = { fg = p.green2 },
+      NeoTreeFileNameOpened  = { fg = p.green },
       NeoTreeIndentMarker    = { fg = p.fg_dim },
       NeoTreeGitModified     = { fg = p.cyan },
       NeoTreeGitUnstaged     = { fg = p.cyan },
       NeoTreeGitStaged       = { fg = p.cyan },
       NeoTreeGitAdded        = { fg = p.green },
       NeoTreeGitDeleted      = { fg = p.red },
-      NeoTreeGitUntracked    = { fg = p.green_bright },
+      NeoTreeGitUntracked    = { fg = p.green },
       NeoTreeGitIgnored      = { fg = p.fg_dim },
       NeoTreeGitConflict     = { fg = p.orange },
     }
@@ -80,7 +80,7 @@ return function(p, c)
       BufferLineFill             = { bg = p.bg },
       BufferLineBackground       = { fg = p.fg_dim,  bg = p.bg_alt },
       BufferLineBufferVisible    = { fg = p.fg,      bg = p.bg_alt },
-      BufferLineBufferSelected   = { fg = p.green2,  bg = p.bg, bold = true },
+      BufferLineBufferSelected   = { fg = p.green,  bg = p.bg, bold = true },
       BufferLineIndicatorSelected = { fg = p.green,  bg = p.bg },
       BufferLineSeparator        = { fg = p.bg,      bg = p.bg_alt },
       BufferLineSeparatorSelected = { fg = p.bg,     bg = p.bg },
@@ -92,23 +92,23 @@ return function(p, c)
       BufferLineCloseButtonSelected        = { fg = p.red,       bg = p.bg },
 
       BufferLineDevIconDefault             = { fg = p.fg_dim,    bg = p.bg_alt },
-      BufferLineDevIconDefaultSelected     = { fg = p.green2,    bg = p.bg },
+      BufferLineDevIconDefaultSelected     = { fg = p.green,    bg = p.bg },
       BufferLineDevIconDefaultInactive     = { fg = p.fg_dim,    bg = p.bg_alt },
 
       BufferLineDuplicate                  = { fg = p.fg_dim,    bg = p.bg_alt, italic = true },
       BufferLineDuplicateVisible           = { fg = p.fg_dim,    bg = p.bg_alt, italic = true },
-      BufferLineDuplicateSelected          = { fg = p.green2,    bg = p.bg,     italic = true },
+      BufferLineDuplicateSelected          = { fg = p.green,    bg = p.bg,     italic = true },
 
       BufferLineNumbers                    = { fg = p.fg_dim,    bg = p.bg_alt },
       BufferLineNumbersVisible             = { fg = p.fg_dim,    bg = p.bg_alt },
-      BufferLineNumbersSelected            = { fg = p.green2,    bg = p.bg,     bold = true },
+      BufferLineNumbersSelected            = { fg = p.green,    bg = p.bg,     bold = true },
 
       BufferLinePick                       = { fg = p.pink, bg = p.bg_alt, bold = true },
       BufferLinePickVisible                = { fg = p.pink, bg = p.bg_alt, bold = true },
       BufferLinePickSelected               = { fg = p.pink, bg = p.bg,     bold = true },
 
       BufferLineTab                        = { fg = p.fg_dim,    bg = p.bg_alt },
-      BufferLineTabSelected                = { fg = p.green2,    bg = p.bg },
+      BufferLineTabSelected                = { fg = p.green,    bg = p.bg },
       BufferLineTabClose                   = { fg = p.red,       bg = p.bg_alt },
 
       BufferLineIndicatorVisible           = { fg = p.bg_alt,    bg = p.bg_alt },
@@ -116,7 +116,7 @@ return function(p, c)
 
       BufferLineTrunkMarker                = { fg = p.fg_dim,    bg = p.bg_alt },
       BufferLineGroupSeparator             = { fg = p.fg_dim,    bg = p.bg_alt },
-      BufferLineGroupLabel                 = { fg = p.green2,    bg = p.bg_alt, bold = true },
+      BufferLineGroupLabel                 = { fg = p.green,    bg = p.bg_alt, bold = true },
     }
     if c.transparent then
       local buf_transparent = {

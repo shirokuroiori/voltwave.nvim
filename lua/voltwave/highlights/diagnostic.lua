@@ -1,5 +1,5 @@
 return function(p, c)
-  local hint_color = c.bolt and p.green_bolt or p.green3
+  local hint_color = c.bolt and p.green_bolt or p.green
 
   return {
     DiagnosticError            = { fg = p.red },

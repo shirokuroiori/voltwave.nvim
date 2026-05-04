@@ -15,16 +15,13 @@ M.line_hl        = '#2D1745'
 M.line_nr        = '#57367c' -- fluoromachine LineNr fg
 M.win_separator  = '#8c57c7' -- fluoromachine WinSeparator fg
 
-M.green2         = '#72F1B8' -- fluoromachine green。アクセント・diff add
-M.green3         = '#8EF4C6' -- fluoromachine bright green。マッチ・カーソル
-M.green_bolt     = '#B6FF00' -- voltwave 稲妻色、ライム緑
-M.green_bright   = '#1ed760' -- cursor line number 用の明るい緑
+M.green_bolt     = '#B6FF00' -- voltwave
 
 M.pink           = '#ff6DBD'
 M.purple         = '#AF6DF9'
 M.cyan           = '#27d7e8'
 M.green          = '#4DFFAD'
-M.yellow         = '#dec816'
+M.yellow         = '#FFE94D'
 M.orange         = '#FF984D'
 M.red            = '#FF4D4D'
 

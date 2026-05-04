@@ -41,6 +41,7 @@ return function(p, c)
     ['@type.definition']       = { fg = p.purple, italic = c.italic.types },
     ['@type.qualifier']        = { fg = p.pink },
     ['@attribute']             = { fg = p.green,  italic = true },
+    ['@attribute.builtin.python'] = { fg = p.green, italic = true },
     ['@property']              = { fg = p.cyan },
     ['@field']                 = { fg = p.cyan },
 
@@ -70,10 +71,10 @@ return function(p, c)
     ['@comment.documentation']  = { fg = p.comment, italic = c.italic.comments },
     ['@comment.error']          = { fg = p.red,     bold = true },
     ['@comment.warning']        = { fg = p.orange,  bold = true },
-    ['@comment.todo']           = { fg = p.bg, bg = c.bolt and p.green_bolt or p.green3, bold = true },
+    ['@comment.todo']           = { fg = p.bg, bg = c.bolt and p.green_bolt or p.green, bold = true },
     ['@comment.note']           = { fg = p.bg,      bg = p.cyan,   bold = true },
     ['@tag']                    = { fg = p.pink },
-    ['@tag.attribute']          = { fg = p.green2,  italic = true },
+    ['@tag.attribute']          = { fg = p.green,  italic = true },
     ['@tag.delimiter']          = { fg = p.fg_dim },
 
     -- マークアップ
@@ -82,7 +83,7 @@ return function(p, c)
     ['@markup.strikethrough']     = { fg = p.fg_dim, strikethrough = true },
     ['@markup.underline']         = { underline = true },
     ['@markup.heading']           = { fg = p.purple, bold = true },
-    ['@markup.heading.1']         = { fg = p.green2, bold = true },
+    ['@markup.heading.1']         = { fg = p.green, bold = true },
     ['@markup.heading.2']         = { fg = p.cyan,   bold = true },
     ['@markup.heading.3']         = { fg = p.purple, bold = true },
     ['@markup.heading.4']         = { fg = p.pink,   bold = true },
@@ -93,10 +94,10 @@ return function(p, c)
     ['@markup.link']              = { fg = p.cyan },
     ['@markup.link.label']        = { fg = p.pink },
     ['@markup.link.url']          = { fg = p.cyan, underline = true },
-    ['@markup.raw']               = { fg = p.green2 },
-    ['@markup.raw.block']         = { fg = p.green2 },
+    ['@markup.raw']               = { fg = p.green },
+    ['@markup.raw.block']         = { fg = p.green },
     ['@markup.list']              = { fg = p.pink },
-    ['@markup.list.checked']      = { fg = p.green2 },
+    ['@markup.list.checked']      = { fg = p.green },
     ['@markup.list.unchecked']    = { fg = p.fg_dim },
 
     -- diff
