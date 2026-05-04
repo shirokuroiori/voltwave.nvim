@@ -1,7 +1,7 @@
 return function(p, c)
   local groups = {
     Normal          = { fg = p.fg,       bg = p.bg },
-    NormalNC        = { fg = p.fg,       bg = p.bg_alt },
+    NormalNC        = { fg = p.fg,       bg = p.bg },
     NormalFloat     = { fg = p.fg,       bg = p.bg_float },
     FloatBorder     = { fg = p.purple, bg = p.bg_float },
     FloatTitle      = { fg = p.green,   bg = p.bg_float, bold = true },
@@ -28,7 +28,7 @@ return function(p, c)
     SpecialKey      = { fg = p.fg_dim },
     EndOfBuffer     = { fg = p.bg },
     Conceal         = { fg = p.fg_dim },
-    WinSeparator    = { fg = p.win_separator, bg = p.bg_alt },
+    WinSeparator    = { fg = p.cyan, bg = p.bg },
     StatusLine      = { fg = p.fg,       bg = p.bg_float },
     StatusLineNC    = { fg = p.fg_dim,   bg = p.bg_alt },
     TabLine         = { fg = p.fg_dim,   bg = p.bg_alt },

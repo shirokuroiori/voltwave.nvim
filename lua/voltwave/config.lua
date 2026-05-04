@@ -28,6 +28,7 @@ local defaults = {
     notify           = true,
     lualine          = true,
     which_key        = true,
+    lazygit          = true,
   },
   overrides = {},
 }

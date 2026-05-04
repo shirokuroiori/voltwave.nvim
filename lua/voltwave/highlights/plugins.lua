@@ -197,6 +197,13 @@ return function(p, c)
     groups = vim.tbl_extend('force', groups, notify)
   end
 
+  -- lazygit
+  if c.plugins.lazygit then
+    groups = vim.tbl_extend('force', groups, {
+      LazyGitBorder = { fg = p.cyan },
+    })
+  end
+
   -- which-key
   if c.plugins.which_key then
     local wk = {
