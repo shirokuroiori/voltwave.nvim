@@ -197,6 +197,18 @@ return function(p, c)
     groups = vim.tbl_extend('force', groups, notify)
   end
 
+  -- render-markdown.nvim
+  if c.plugins.render_markdown then
+    local blend = require('voltwave.util').blend
+    local rm_colors = { p.pink, p.purple, p.cyan, p.green, p.green_bolt, p.yellow }
+    local rm = {}
+    for i, color in ipairs(rm_colors) do
+      rm['RenderMarkdownH' .. i]         = { fg = color, bold = true }
+      rm['RenderMarkdownH' .. i .. 'Bg'] = { fg = color, bg = blend(color, p.bg, 0.12) }
+    end
+    groups = vim.tbl_extend('force', groups, rm)
+  end
+
   -- lazygit
   if c.plugins.lazygit then
     groups = vim.tbl_extend('force', groups, {

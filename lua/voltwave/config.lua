@@ -29,6 +29,7 @@ local defaults = {
     lualine          = true,
     which_key        = true,
     lazygit          = true,
+    render_markdown  = true,
   },
   overrides = {},
 }
