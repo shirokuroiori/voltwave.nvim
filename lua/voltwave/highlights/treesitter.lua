@@ -5,7 +5,7 @@ return function(p, c)
 
   return {
     -- 識別子
-    ['@variable']              = { fg = p.green },
+    ['@variable']              = { fg = p.cyan },
     ['@variable.builtin']      = { fg = p.purple, italic = c.italic.variables },
     ['@variable.parameter']    = { fg = p.orange, italic = c.italic.parameters },
     ['@variable.member']       = { fg = p.cyan },
@@ -29,12 +29,12 @@ return function(p, c)
     ['@boolean']               = { fg = p.purple },
 
     -- 関数・型
-    ['@function']              = { fg = p.cyan, italic = c.italic.functions, bold = true },
-    ['@function.builtin']      = { fg = p.cyan, italic = true, bold = true },
-    ['@function.call']         = { fg = p.green_bolt, italic = c.italic.functions, bold = true },
-    ['@function.macro']        = { fg = p.cyan },
-    ['@function.method']       = { fg = p.cyan, italic = c.italic.functions, bold = true },
-    ['@function.method.call']  = { fg = p.cyan, italic = c.italic.functions, bold = true },
+    ['@function']              = { fg = p.green_bolt, italic = c.italic.functions, bold = true },
+    ['@function.builtin']      = { fg = p.purple, italic = true, bold = true },
+    ['@function.call']         = { fg = p.green, italic = c.italic.functions, bold = true },
+    ['@function.macro']        = { fg = p.green },
+    ['@function.method']       = { fg = p.green_bolt , italic = c.italic.functions, bold = true },
+    ['@function.method.call']  = { fg = p.green , italic = c.italic.functions, bold = true },
     ['@constructor']           = { fg = p.purple },
     ['@type']                  = { fg = p.purple, italic = c.italic.types },
     ['@type.builtin']          = { fg = p.cyan, italic = c.italic.types },
@@ -64,7 +64,7 @@ return function(p, c)
     ['@operator']                     = { fg = p.pink },
 
     -- 句読点・コメント・タグ
-    ['@punctuation.delimiter']  = { fg = p.pink },
+    ['@punctuation.delimiter']  = { fg = p.fg },
     ['@punctuation.bracket']    = { fg = p.fg },
     ['@punctuation.special']    = { fg = p.pink },
     ['@comment']                = { fg = p.comment, italic = c.italic.comments },

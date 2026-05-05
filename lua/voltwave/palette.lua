@@ -16,7 +16,7 @@ M.line_nr        = '#57367c' -- fluoromachine LineNr fg
 M.win_separator  = '#8c57c7' -- fluoromachine WinSeparator fg
 
 
-M.pink           = '#ff6DBD'
+M.pink           = '#ff5ec0'
 M.purple         = '#AF6DF9'
 M.cyan           = '#27d7e8'
 M.green          = '#4DFFAD'
