@@ -5,7 +5,7 @@ return function(p, c)
 
   return {
     -- 識別子
-    ['@variable']              = { fg = p.fg },
+    ['@variable']              = { fg = p.green },
     ['@variable.builtin']      = { fg = p.purple, italic = c.italic.variables },
     ['@variable.parameter']    = { fg = p.orange, italic = c.italic.parameters },
     ['@variable.member']       = { fg = p.cyan },
@@ -31,7 +31,7 @@ return function(p, c)
     -- 関数・型
     ['@function']              = { fg = p.cyan, italic = c.italic.functions, bold = true },
     ['@function.builtin']      = { fg = p.cyan, italic = true, bold = true },
-    ['@function.call']         = { fg = p.green, italic = c.italic.functions, bold = true },
+    ['@function.call']         = { fg = p.green_bolt, italic = c.italic.functions, bold = true },
     ['@function.macro']        = { fg = p.cyan },
     ['@function.method']       = { fg = p.cyan, italic = c.italic.functions, bold = true },
     ['@function.method.call']  = { fg = p.cyan, italic = c.italic.functions, bold = true },
@@ -106,12 +106,13 @@ return function(p, c)
     ['@diff.delta']  = { fg = p.cyan },
 
     -- prisma
+    ['@variable.prisma']        = { fg = p.green },
     ['@attribute.prisma']       = { fg = p.cyan, italic = true },
     ['@type.definition.prisma'] = { fg = p.purple },
     ['@property.prisma']        = { fg = p.purple },
     ['@variable.member.prisma'] = { fg = p.cyan },
-    ['@function.prisma']        = { fg = p.green, bold = true },
-    ['@function.call.prisma']   = { fg = p.green, bold = true },
-    ['@operator.prisma']        = { fg = p.green },
+    ['@function.prisma']        = { fg = p.green_bolt, bold = true },
+    ['@function.call.prisma']   = { fg = p.green_bolt, bold = true },
+    ['@operator.prisma']        = { fg = p.green_bolt },
   }
 end
