@@ -36,6 +36,7 @@ return function(p, c)
     ['@function.method']       = { fg = p.green_bolt , italic = c.italic.functions, bold = true },
     ['@function.method.call']  = { fg = p.green , italic = c.italic.functions, bold = true },
     ['@constructor']           = { fg = p.purple },
+    ['@constructor.python']    = { fg = p.green },
     ['@type']                  = { fg = p.purple, italic = c.italic.types },
     ['@type.builtin']          = { fg = p.cyan, italic = c.italic.types },
     ['@type.definition']       = { fg = p.purple, italic = c.italic.types },
