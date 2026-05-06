@@ -74,7 +74,8 @@ return function(p, c)
     ['@comment.warning']        = { fg = p.orange,  bold = true },
     ['@comment.todo']           = { fg = p.bg, bg = c.bolt and p.green_bolt or p.green, bold = true },
     ['@comment.note']           = { fg = p.bg,      bg = p.cyan,   bold = true },
-    ['@tag']                    = { fg = p.pink },
+    ['@tag']                    = { fg = p.cyan },
+    ['@tag.builtin']            = { fg = p.pink },
     ['@tag.attribute']          = { fg = p.green,  italic = true },
     ['@tag.delimiter']          = { fg = p.fg_dim },
 
