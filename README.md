@@ -4,7 +4,7 @@
 
 Inspired by Synthwave84 and [Fluoromachine](https://github.com/maxmx03/fluoromachine.nvim), this Neovim color theme features a retro-futuristic vibe with a touch of “green electricity”—a personal touch I added to suit my own taste.
 
-![screenshot](./screenshot.png)
+![screenshot](./docs/img/sample.png)
 
 ## Requirements
 
@@ -74,6 +74,10 @@ require('voltwave').setup({
     bufferline       = true,
     indent_blankline = true,
     gitsigns         = true,
+    which_key        = true,
+    lazygit          = true,
+    render_markdown    = true,
+    rainbow_delimiters = true,
   },
   -- Override any highlight group
   overrides = {
@@ -84,9 +88,9 @@ require('voltwave').setup({
 vim.cmd.colorscheme('voltwave')
 ```
 
-voltwave という名前にちなんだ稲妻演出です。`bolt = false` にするとフォールバック色 (`green3`) が使われます。
-`glow = false` にすると、オーラ背景を無効化してフラットな表示になります。
-`glow_strength` は `0.0-1.0` の範囲を推奨します（範囲外は内部でクランプされます）。
+This lightning effect is inspired by the name “voltwave.” Setting `bolt = false` uses the fallback color (`green`).
+Setting `glow = false` disables the glow background, resulting in a flat appearance.
+We recommend setting `glow_strength` within the range of `0.0–1.0` (values outside this range will be clamped internally).
 
 ## lualine
 
