@@ -5,7 +5,7 @@ return function(p, c)
 
   return {
     -- 識別子
-    ['@variable']              = { fg = p.cyan },
+    ['@variable']              = { fg = p.blue },
     ['@variable.builtin']      = { fg = p.purple, italic = c.italic.variables },
     ['@variable.parameter']    = { fg = p.orange, italic = c.italic.parameters },
     ['@variable.member']       = { fg = p.cyan },
@@ -106,13 +106,13 @@ return function(p, c)
     ['@diff.delta']  = { fg = p.cyan },
 
     -- prisma
-    ['@variable.prisma']        = { fg = p.green },
+    ['@variable.prisma']        = { fg = p.blue},
     ['@attribute.prisma']       = { fg = p.cyan, italic = true },
     ['@type.definition.prisma'] = { fg = p.purple },
     ['@property.prisma']        = { fg = p.purple },
     ['@variable.member.prisma'] = { fg = p.cyan },
-    ['@function.prisma']        = { fg = p.green_bolt, bold = true },
-    ['@function.call.prisma']   = { fg = p.green_bolt, bold = true },
-    ['@operator.prisma']        = { fg = p.green_bolt },
+    ['@function.prisma']        = { fg = p.green, bold = true },
+    ['@function.call.prisma']   = { fg = p.green, bold = true },
+    ['@operator.prisma']        = { fg = p.green },
   }
 end
