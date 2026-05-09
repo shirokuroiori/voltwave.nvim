@@ -200,7 +200,7 @@ return function(p, c)
   -- render-markdown.nvim
   if c.plugins.render_markdown then
     local blend = require('voltwave.util').blend
-    local rm_colors = { p.pink, p.purple, p.cyan, p.green, p.green_bolt, p.yellow }
+    local rm_colors = { p.purple, p.cyan, p.green, p.green_bolt, p.yellow, p.orange }
     local rm = {}
     for i, color in ipairs(rm_colors) do
       rm['RenderMarkdownH' .. i]         = { fg = color, bold = true }
