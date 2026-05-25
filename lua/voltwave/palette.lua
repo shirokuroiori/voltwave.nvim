@@ -12,7 +12,7 @@ M.fg_bright      = '#F8F8F8' -- fluoromachine white
 M.comment        = '#495495' -- fluoromachine comment
 M.selection      = '#463465' -- fluoromachine selection
 M.line_hl        = '#2D1745'
-M.line_nr        = '#57367c' -- fluoromachine LineNr fg
+M.line_nr        = '#6e4e96' -- fluoromachine LineNr fg
 M.win_separator  = '#8c57c7' -- fluoromachine WinSeparator fg
 
 
