@@ -213,12 +213,12 @@ return function(p, c)
   if c.plugins.rainbow_delimiters then
     groups = vim.tbl_extend('force', groups, {
       RainbowDelimiterRed    = { fg = p.yellow },
-      RainbowDelimiterYellow = { fg = p.pink },
-      RainbowDelimiterBlue   = { fg = p.purple },
-      RainbowDelimiterOrange = { fg = p.cyan },
-      RainbowDelimiterGreen  = { fg = p.green },
-      RainbowDelimiterViolet = { fg = p.yellow },
-      RainbowDelimiterCyan   = { fg = p.pink },
+      RainbowDelimiterYellow = { fg = p.orange },
+      RainbowDelimiterBlue   = { fg = p.blue },
+      RainbowDelimiterOrange = { fg = p.yellow },
+      RainbowDelimiterGreen  = { fg = p.orange },
+      RainbowDelimiterViolet = { fg = p.blue },
+      RainbowDelimiterCyan   = { fg = p.yellow },
     })
   end
 
