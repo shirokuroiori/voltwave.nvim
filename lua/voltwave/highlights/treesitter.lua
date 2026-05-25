@@ -8,7 +8,7 @@ return function(p, c)
     ['@variable']              = { fg = p.blue },
     ['@variable.builtin']      = { fg = p.purple, italic = c.italic.variables },
     ['@variable.parameter']    = { fg = p.orange, italic = c.italic.parameters },
-    ['@variable.member']       = { fg = p.cyan },
+    ['@variable.member']       = { fg = p.blue },
     ['@constant']              = { fg = p.purple },
     ['@constant.builtin']      = { fg = p.purple, bold = true },
     ['@constant.macro']        = { fg = p.purple },
@@ -29,17 +29,16 @@ return function(p, c)
     ['@boolean']               = { fg = p.purple },
 
     -- 関数・型
-    ['@function']              = { fg = p.green_bolt, italic = c.italic.functions, bold = true },
-    ['@function.builtin']      = { fg = p.purple, italic = true, bold = true },
+    ['@function']              = { fg = p.green, italic = c.italic.functions, bold = true },
+    ['@function.builtin']      = { fg = p.cyan, italic = true, bold = true },
     ['@function.call']         = { fg = p.green, italic = c.italic.functions, bold = true },
     ['@function.macro']        = { fg = p.green },
-    ['@function.method']       = { fg = p.green_bolt , italic = c.italic.functions, bold = true },
+    ['@function.method']       = { fg = p.green , italic = c.italic.functions, bold = true },
     ['@function.method.call']  = { fg = p.green , italic = c.italic.functions, bold = true },
-    ['@constructor']           = { fg = p.purple },
-    ['@constructor.python']    = { fg = p.green },
-    ['@type']                  = { fg = p.purple, italic = c.italic.types },
+    ['@constructor']           = { fg = p.cyan, bold = true },
+    ['@type']                  = { fg = p.cyan, italic = c.italic.types },
     ['@type.builtin']          = { fg = p.cyan, italic = c.italic.types },
-    ['@type.definition']       = { fg = p.purple, italic = c.italic.types },
+    ['@type.definition']       = { fg = p.cyan, italic = c.italic.types },
     ['@type.qualifier']        = { fg = p.pink },
     ['@attribute']             = { fg = p.green,  italic = true },
     ['@attribute.builtin.python'] = { fg = p.green, italic = true },
@@ -105,7 +104,7 @@ return function(p, c)
     -- diff
     ['@diff.plus']   = { fg = p.green },
     ['@diff.minus']  = { fg = p.red },
-    ['@diff.delta']  = { fg = p.cyan },
+    ['@diff.delta']  = { fg = p.green },
 
     -- prisma
     ['@variable.prisma']        = { fg = p.blue},

@@ -19,14 +19,14 @@ M.win_separator  = '#8c57c7' -- fluoromachine WinSeparator fg
 M.pink           = '#ff44bb'
 M.purple         = '#AF6DF9'
 M.blue           = '#5577FF'
-M.cyan           = '#27d7e8'
-M.green          = '#4DFFAD'
+M.cyan           = '#03E1FF'
+M.green          = '#32FFB4'
 M.green_bolt     = '#B6FF00' -- voltwave
 M.yellow         = '#FFE94D'
 M.orange         = '#FF984D'
 M.red            = '#FF4D4D'
 
-M.info           = M.cyan
+M.info           = M.green_bolt
 M.warn           = M.orange
 M.error          = M.red
 M.hint           = M.green

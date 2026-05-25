@@ -31,6 +31,8 @@ return function(p, c)
 
     ['@lsp.typemod.function.defaultLibrary']  = { fg = p.cyan, italic = true },
     ['@lsp.typemod.variable.defaultLibrary']  = { fg = p.purple, italic = true },
+    ['@lsp.typemod.function.readonly']         = { link = '@function' },
+    ['@lsp.typemod.property.readonly']         = { fg = p.cyan },
     ['@lsp.typemod.variable.readonly']        = { fg = p.purple },
     ['@lsp.typemod.method.defaultLibrary']    = { fg = p.cyan, italic = true },
   }
