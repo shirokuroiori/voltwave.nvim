@@ -9,7 +9,7 @@ M.fg_dim         = '#6B7A8F'
 M.fg             = '#EDEDED' -- fluoromachine fg
 M.fg_bright      = '#F8F8F8' -- fluoromachine white
 
-M.comment        = '#495495' -- fluoromachine comment
+M.comment        = '#7B82C9'
 M.selection      = '#6B4D9C' -- 明度を上げて視認性を確保 (Search/surface より明るく)
 M.line_hl        = '#2D1745'
 M.line_nr        = '#6e4e96' -- fluoromachine LineNr fg
