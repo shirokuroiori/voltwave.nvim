@@ -27,22 +27,23 @@ return function(p, c)
 
   -- telescope
   if c.plugins.telescope then
+    local tel_bg = c.transparent and 'NONE' or p.bg_float
     local tel = {
-      TelescopeNormal         = { fg = p.fg,       bg = p.bg_float },
-      TelescopeBorder         = { fg = p.green,    bg = p.bg_float },
-      TelescopePromptNormal   = { fg = p.fg_bright, bg = p.bg_float },
-      TelescopePromptBorder   = { fg = p.green,    bg = p.bg_float },
-      TelescopePromptTitle    = { fg = p.bg,        bg = p.green, bold = true },
-      TelescopePromptPrefix   = { fg = p.green,    bg = p.bg_float },
-      TelescopeResultsNormal  = { fg = p.fg,       bg = p.bg_float },
-      TelescopeResultsBorder  = { fg = p.green,    bg = p.bg_float },
-      TelescopeResultsTitle   = { fg = p.green,   bg = p.bg_float },
-      TelescopePreviewNormal  = { fg = p.fg,       bg = p.bg_float },
-      TelescopePreviewBorder  = { fg = p.green,    bg = p.bg_float },
-      TelescopePreviewTitle   = { fg = p.bg,       bg = p.green, bold = true },
-      TelescopeSelection      = { fg = p.fg_bright, bg = p.surface },
-      TelescopeSelectionCaret = { fg = p.green,   bg = p.surface },
-      TelescopeMatching       = { fg = p.green,   bold = true },
+      TelescopeNormal         = { fg = p.fg,        bg = tel_bg },
+      TelescopeBorder         = { fg = p.green,      bg = tel_bg },
+      TelescopePromptNormal   = { fg = p.fg_bright,  bg = tel_bg },
+      TelescopePromptBorder   = { fg = p.green,      bg = tel_bg },
+      TelescopePromptTitle    = { fg = p.bg,          bg = p.green, bold = true },
+      TelescopePromptPrefix   = { fg = p.green,      bg = tel_bg },
+      TelescopeResultsNormal  = { fg = p.fg,         bg = tel_bg },
+      TelescopeResultsBorder  = { fg = p.green,      bg = tel_bg },
+      TelescopeResultsTitle   = { fg = p.green,      bg = tel_bg },
+      TelescopePreviewNormal  = { fg = p.fg,         bg = tel_bg },
+      TelescopePreviewBorder  = { fg = p.green,      bg = tel_bg },
+      TelescopePreviewTitle   = { fg = p.bg,         bg = p.green, bold = true },
+      TelescopeSelection      = { fg = p.fg_bright,  bg = p.surface },
+      TelescopeSelectionCaret = { fg = p.green,      bg = p.surface },
+      TelescopeMatching       = { fg = p.green,      bold = true },
     }
     groups = vim.tbl_extend('force', groups, tel)
   end
