@@ -92,6 +92,26 @@ This lightning effect is inspired by the name “voltwave.” Setting `bolt = fa
 Setting `glow = false` disables the glow background, resulting in a flat appearance.
 We recommend setting `glow_strength` within the range of `0.0–1.0` (values outside this range will be clamped internally).
 
+## LazyGit
+
+The outer border of the LazyGit float window is controlled by `LazyGitBorder` (set to cyan by voltwave).
+Inner panel borders are rendered by LazyGit itself and must be configured in `~/.config/lazygit/config.yml`:
+
+```yaml
+gui:
+  theme:
+    activeBorderColor:
+      - '#B6FF00'
+      - bold
+    inactiveBorderColor:
+      - '#03E1FF'
+    searchingActiveBorderColor:
+      - '#B6FF00'
+      - bold
+```
+
+This matches the voltwave palette: `green_bolt` (#B6FF00) for active panels, `cyan` (#03E1FF) for inactive panels.
+
 ## lualine
 
 ```lua
