@@ -248,32 +248,34 @@ return function(p, c)
 
   -- noice.nvim
   if c.plugins.noice then
+    local float_bg = c.transparent and 'NONE' or p.bg_float
+    local mini_bg  = c.transparent and 'NONE' or p.bg
     local noice = {
       -- cmdline (popup view)
-      NoiceCmdline                  = { fg = p.fg,         bg = p.bg_float },
-      NoiceCmdlineIcon              = { fg = p.green_bolt, bg = p.bg_float },
-      NoiceCmdlineIconSearch        = { fg = p.green_bolt, bg = p.bg_float },
-      NoiceCmdlinePopup             = { fg = p.fg,         bg = p.bg_float },
-      NoiceCmdlinePopupBorder       = { fg = p.purple,     bg = p.bg_float },
-      NoiceCmdlinePopupTitle        = { fg = p.green,      bg = p.bg_float, bold = true },
-      NoiceCmdlinePopupBorderSearch = { fg = p.green_bolt, bg = p.bg_float },
-      NoiceCmdlinePrompt            = { fg = p.green,      bg = p.bg_float },
+      NoiceCmdline                  = { fg = p.fg,         bg = float_bg },
+      NoiceCmdlineIcon              = { fg = p.green_bolt, bg = float_bg },
+      NoiceCmdlineIconSearch        = { fg = p.green_bolt, bg = float_bg },
+      NoiceCmdlinePopup             = { fg = p.fg,         bg = float_bg },
+      NoiceCmdlinePopupBorder       = { fg = p.purple,     bg = float_bg },
+      NoiceCmdlinePopupTitle        = { fg = p.green,      bg = float_bg, bold = true },
+      NoiceCmdlinePopupBorderSearch = { fg = p.green_bolt, bg = float_bg },
+      NoiceCmdlinePrompt            = { fg = p.green,      bg = float_bg },
 
       -- mini view (used for search count [1/1] etc.)
-      NoiceMini                     = { fg = p.green_bolt, bg = p.bg },
+      NoiceMini                     = { fg = p.green_bolt, bg = mini_bg },
 
       -- virtual text (search count overlay)
       NoiceVirtualText              = { fg = p.green_bolt },
 
       -- popupmenu
-      NoicePopupmenu                = { fg = p.fg,        bg = p.bg_float },
+      NoicePopupmenu                = { fg = p.fg,        bg = float_bg },
       NoicePopupmenuSelected        = { fg = p.fg_bright, bg = p.surface, bold = true },
-      NoicePopupmenuBorder          = { fg = p.purple,    bg = p.bg_float },
+      NoicePopupmenuBorder          = { fg = p.purple,    bg = float_bg },
       NoicePopupmenuMatch           = { fg = p.green,     bold = true },
 
       -- confirm dialog
-      NoiceConfirm                  = { fg = p.fg,    bg = p.bg_float },
-      NoiceConfirmBorder            = { fg = p.green, bg = p.bg_float },
+      NoiceConfirm                  = { fg = p.fg,    bg = float_bg },
+      NoiceConfirmBorder            = { fg = p.green, bg = float_bg },
 
       -- format groups
       NoiceFormatProgressDone       = { fg = p.bg,        bg = p.green },
