@@ -76,7 +76,7 @@ return function(p, c)
     ['@tag']                    = { fg = p.cyan },
     ['@tag.builtin']            = { fg = p.pink },
     ['@tag.attribute']          = { fg = p.green,  italic = true },
-    ['@tag.delimiter']          = { fg = p.fg_dim },
+    ['@tag.delimiter']          = { fg = p.fg },
 
     -- マークアップ
     ['@markup.strong']            = { fg = p.orange, bold = true },

@@ -10,7 +10,7 @@ M.fg             = '#EDEDED' -- fluoromachine fg
 M.fg_bright      = '#F8F8F8' -- fluoromachine white
 
 M.comment        = '#495495' -- fluoromachine comment
-M.selection      = '#463465' -- fluoromachine selection
+M.selection      = '#6B4D9C' -- 明度を上げて視認性を確保 (Search/surface より明るく)
 M.line_hl        = '#2D1745'
 M.line_nr        = '#6e4e96' -- fluoromachine LineNr fg
 M.win_separator  = '#8c57c7' -- fluoromachine WinSeparator fg
@@ -18,7 +18,7 @@ M.win_separator  = '#8c57c7' -- fluoromachine WinSeparator fg
 
 M.pink           = '#ff44bb'
 M.purple         = '#AF6DF9'
-M.blue           = '#5577FF'
+M.blue           = '#7B9CFF'
 M.cyan           = '#03E1FF'
 M.green          = '#32FFB4'
 M.green_bolt     = '#B6FF00' -- voltwave

@@ -31,6 +31,7 @@ local defaults = {
     lazygit          = true,
     render_markdown    = true,
     rainbow_delimiters = true,
+    illuminate         = true,
   },
   overrides = {},
 }

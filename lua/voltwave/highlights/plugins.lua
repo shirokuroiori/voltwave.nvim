@@ -237,5 +237,14 @@ return function(p, c)
     groups = vim.tbl_extend('force', groups, wk)
   end
 
+  -- vim-illuminate
+  if c.plugins.illuminate then
+    groups = vim.tbl_extend('force', groups, {
+      IlluminatedWordText  = { underline = true, sp = p.comment },
+      IlluminatedWordRead  = { underline = true, sp = p.cyan },
+      IlluminatedWordWrite = { underline = true, sp = p.pink },
+    })
+  end
+
   return groups
 end
