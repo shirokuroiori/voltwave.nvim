@@ -19,6 +19,66 @@ function M.blend(fg, bg, alpha)
   return string.format('#%02x%02x%02x', r, g, b)
 end
 
+local function rgb_to_hsl(r, g, b)
+  r, g, b = r / 255, g / 255, b / 255
+  local max, min = math.max(r, g, b), math.min(r, g, b)
+  local l = (max + min) / 2
+  local h, s = 0, 0
+  if max ~= min then
+    local d = max - min
+    s = l > 0.5 and d / (2 - max - min) or d / (max + min)
+    if max == r then
+      h = (g - b) / d + (g < b and 6 or 0)
+    elseif max == g then
+      h = (b - r) / d + 2
+    else
+      h = (r - g) / d + 4
+    end
+    h = h / 6
+  end
+  return h, s, l
+end
+
+local function hue_to_rgb(p_, q_, t)
+  if t < 0 then t = t + 1 end
+  if t > 1 then t = t - 1 end
+  if t < 1/6 then return p_ + (q_ - p_) * 6 * t end
+  if t < 1/2 then return q_ end
+  if t < 2/3 then return p_ + (q_ - p_) * (2/3 - t) * 6 end
+  return p_
+end
+
+local function hsl_to_hex(h, s, l)
+  local nr, ng, nb
+  if s == 0 then
+    nr, ng, nb = l, l, l
+  else
+    local q = l < 0.5 and l * (1 + s) or l + s - l * s
+    local p = 2 * l - q
+    nr = hue_to_rgb(p, q, h + 1/3)
+    ng = hue_to_rgb(p, q, h)
+    nb = hue_to_rgb(p, q, h - 1/3)
+  end
+  return string.format('#%02x%02x%02x',
+    math.floor(nr * 255 + 0.5),
+    math.floor(ng * 255 + 0.5),
+    math.floor(nb * 255 + 0.5))
+end
+
+-- hex色の彩度を amount (0.0〜1.0) の割合だけ下げる (HSL ベース、明度は維持)
+function M.desaturate(hex, amount)
+  local r, g, b = hex_to_rgb(hex)
+  local h, s, l = rgb_to_hsl(r, g, b)
+  return hsl_to_hex(h, s * (1 - amount), l)
+end
+
+-- hex色の明度を amount (0.0〜1.0) の割合だけ下げる (HSL ベース、彩度は維持)
+function M.darken(hex, amount)
+  local r, g, b = hex_to_rgb(hex)
+  local h, s, l = rgb_to_hsl(r, g, b)
+  return hsl_to_hex(h, s, l * (1 - amount))
+end
+
 -- ハイライトグループを一括適用する
 function M.apply(groups)
   for name, spec in pairs(groups) do

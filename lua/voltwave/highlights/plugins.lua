@@ -212,14 +212,18 @@ return function(p, c)
 
   -- rainbow-delimiters.nvim
   if c.plugins.rainbow_delimiters then
+    local util = require('voltwave.util')
+    local dim = function(color)
+      return util.desaturate(util.darken(color, 0.30), 0.25)
+    end
     groups = vim.tbl_extend('force', groups, {
-      RainbowDelimiterRed    = { fg = p.yellow },
-      RainbowDelimiterYellow = { fg = p.orange },
-      RainbowDelimiterBlue   = { fg = p.blue },
-      RainbowDelimiterOrange = { fg = p.yellow },
-      RainbowDelimiterGreen  = { fg = p.orange },
-      RainbowDelimiterViolet = { fg = p.blue },
-      RainbowDelimiterCyan   = { fg = p.yellow },
+      RainbowDelimiterRed    = { fg = dim(p.yellow) },
+      RainbowDelimiterYellow = { fg = dim(p.pink) },
+      RainbowDelimiterBlue   = { fg = dim(p.blue) },
+      RainbowDelimiterOrange = { fg = dim(p.yellow) },
+      RainbowDelimiterGreen  = { fg = dim(p.orange) },
+      RainbowDelimiterViolet = { fg = dim(p.blue) },
+      RainbowDelimiterCyan   = { fg = dim(p.yellow) },
     })
   end
 
@@ -227,6 +231,7 @@ return function(p, c)
   if c.plugins.lazygit then
     groups = vim.tbl_extend('force', groups, {
       LazyGitBorder = { fg = p.cyan },
+      LazyGitFloat  = { fg = p.fg },
     })
   end
 
