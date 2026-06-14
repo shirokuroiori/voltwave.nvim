@@ -256,7 +256,7 @@ return function(p, c)
       NoiceCmdlineIcon              = { fg = p.green_bolt, bg = float_bg },
       NoiceCmdlineIconSearch        = { fg = p.green_bolt, bg = float_bg },
       NoiceCmdlinePopup             = { fg = p.fg,         bg = float_bg },
-      NoiceCmdlinePopupBorder       = { fg = p.purple,     bg = float_bg },
+      NoiceCmdlinePopupBorder       = { fg = p.cyan,       bg = float_bg },
       NoiceCmdlinePopupTitle        = { fg = p.green,      bg = float_bg, bold = true },
       NoiceCmdlinePopupBorderSearch = { fg = p.green_bolt, bg = float_bg },
       NoiceCmdlinePrompt            = { fg = p.green,      bg = float_bg },
