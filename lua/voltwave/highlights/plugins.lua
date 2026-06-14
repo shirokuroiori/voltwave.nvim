@@ -246,5 +246,51 @@ return function(p, c)
     })
   end
 
+  -- noice.nvim
+  if c.plugins.noice then
+    local noice = {
+      -- cmdline (popup view)
+      NoiceCmdline                  = { fg = p.fg,         bg = p.bg_float },
+      NoiceCmdlineIcon              = { fg = p.green_bolt, bg = p.bg_float },
+      NoiceCmdlineIconSearch        = { fg = p.green_bolt, bg = p.bg_float },
+      NoiceCmdlinePopup             = { fg = p.fg,         bg = p.bg_float },
+      NoiceCmdlinePopupBorder       = { fg = p.purple,     bg = p.bg_float },
+      NoiceCmdlinePopupTitle        = { fg = p.green,      bg = p.bg_float, bold = true },
+      NoiceCmdlinePopupBorderSearch = { fg = p.green_bolt, bg = p.bg_float },
+      NoiceCmdlinePrompt            = { fg = p.green,      bg = p.bg_float },
+
+      -- mini view (used for search count [1/1] etc.)
+      NoiceMini                     = { fg = p.green_bolt, bg = p.bg },
+
+      -- virtual text (search count overlay)
+      NoiceVirtualText              = { fg = p.green_bolt },
+
+      -- popupmenu
+      NoicePopupmenu                = { fg = p.fg,        bg = p.bg_float },
+      NoicePopupmenuSelected        = { fg = p.fg_bright, bg = p.surface, bold = true },
+      NoicePopupmenuBorder          = { fg = p.purple,    bg = p.bg_float },
+      NoicePopupmenuMatch           = { fg = p.green,     bold = true },
+
+      -- confirm dialog
+      NoiceConfirm                  = { fg = p.fg,    bg = p.bg_float },
+      NoiceConfirmBorder            = { fg = p.green, bg = p.bg_float },
+
+      -- format groups
+      NoiceFormatProgressDone       = { fg = p.bg,        bg = p.green },
+      NoiceFormatProgressTodo       = { fg = p.fg_dim,    bg = p.surface },
+      NoiceFormatEvent              = { fg = p.fg_dim },
+      NoiceFormatKind               = { fg = p.fg_dim },
+      NoiceFormatTitle              = { fg = p.green,     bold = true },
+      NoiceFormatDate               = { fg = p.fg_dim },
+      NoiceFormatLevelTrace         = { fg = p.fg_dim },
+      NoiceFormatLevelDebug         = { fg = p.purple },
+      NoiceFormatLevelInfo          = { fg = p.green },
+      NoiceFormatLevelWarn          = { fg = p.orange },
+      NoiceFormatLevelError         = { fg = p.red },
+      NoiceFormatLevelOff           = { fg = p.fg_dim },
+    }
+    groups = vim.tbl_extend('force', groups, noice)
+  end
+
   return groups
 end

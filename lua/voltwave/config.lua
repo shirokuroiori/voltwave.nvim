@@ -32,6 +32,7 @@ local defaults = {
     render_markdown    = true,
     rainbow_delimiters = true,
     illuminate         = true,
+    noice              = true,
   },
   overrides = {},
 }
